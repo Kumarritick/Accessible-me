@@ -1,0 +1,116 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background-color: #e0e0e0; /* Light grey background for better contrast */
+  color: #333; /* Darker text for readability */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  color: #222; /* Darker heading color for contrast */
+}
+
+a {
+  color: #0056b3; /* Ensure link colors are distinct */
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid #0056b3; /* Clear focus styles for keyboard accessibility */
+}
+
+/* Layout and Container */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  width: 100%;
+  height: auto; /* Ensure images scale and maintain aspect ratio */
+}
+
+/* Navigation */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.main-nav ul li a {
+  display: block;
+  color: #0056b3; /* Ensure sufficient contrast for nav links */
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  background-color: #d0d0d0; /* Highlight nav links on hover/focus */
+}
+
+/* Forms */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc; /* Ensure visible input borders */
+  border-radius: 5px; /* Add rounded corners for better aesthetics */
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0056b3; /* Add focus indication for form fields */
+}
+
+form textarea {
+  min-height: 150px;
+  max-height: 150px;
+  height: 150px;
+  resize: none;
+}
+
+form button {
+  background: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+  background-color: #003e7e; /* Button color change on hover/focus */
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  text-decoration: underline;
+}

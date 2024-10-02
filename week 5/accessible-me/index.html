@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Adding Skip Link -->
+  <style>
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background-color: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+  <div class="container">
+    <header class="site-header" role="banner">
+      <h1>Welcome to Ritick Kumar's Website</h1>
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Studio</a></li>
+        </ul>
+      </nav>
+      <img src="C:\Users\rania\Downloads\Green Watercolour Opening Soon Banner.png" alt="Website Banner" class="banner">
+    </header>
+
+    <main id="main-content" class="main-content" role="main">
+      <section>
+        <h2>Welcome to My Personal Website</h2>
+        <p>Hello, and welcome to my website! My name is Ritick Kumar, and this site is a reflection of my work and passion. Please feel free to explore the different sections to learn more about what I do and how you can connect with me.</p>
+       
+      </section>
+
+      <section class="owner">
+        <h2>Meet the Owner</h2>
+        <ul>
+          <li><strong>Name:</strong> Ritick Kumar</li>
+          <li><strong>Title:</strong> CEO</li>
+          <li><strong>Email:</strong> <a href="mailto:ritickkumar@mywebsite.ca">ritickkumar@mywebsite.ca</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+16130000000">613-000-0000</a></li>
+        </ul>
+        <h3>Address</h3>
+        <address>
+          123 Guitar Road,<br>
+          Musicville, Danceistan<br>
+          B3T 0L0
+        </address>
+      </section>
+
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="thanks.html">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" placeholder="Full Name" aria-required="true">
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" aria-required="true">
+          
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject">
+          
+          <label for="message">Your Message</label>
+          <textarea id="message" placeholder="Your Message"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      &copy; 2021 Ritick Kumar
+    </footer>
+  </div>
+
+</body>
+
+</html>
